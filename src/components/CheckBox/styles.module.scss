@@ -1,0 +1,41 @@
+@import "../../assets/variable.scss";
+
+.container {
+  display: flex;
+  gap: 7px;
+  .label {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10px;
+    font-style: normal;
+    text-align: left;
+    color: #2699fb;
+  }
+  .checkbox {
+    margin-top: 1%;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 11px;
+    height: 11px;
+    flex-shrink: 0;
+    border-width: 1px;
+    border-style: solid;
+    border: 1px solid $secondaryColor;
+    border-radius: 0px;
+    outline: none;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+
+    &:checked {
+      background-color: $primaryColor;
+    }
+    &:checked::after {
+      content: "\2713";
+      top: -6px;
+      font-weight: bold;
+      color: $secondaryColor;
+      position: absolute;
+    }
+  }
+}

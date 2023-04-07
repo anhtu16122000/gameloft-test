@@ -1,0 +1,23 @@
+@import "../../assets/variable.scss";
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto !important;
+  padding: 0 80px;
+}
+.lg {
+  max-width: 1920px;
+}
+.sm {
+  max-width: 1049px;
+  padding: 0px 10px;
+}
+
+@media (max-width: $mobilePoint) {
+  .lg {
+    padding: 0 18px;
+  }
+  .sm {
+    padding: 0 30px;
+  }
+}

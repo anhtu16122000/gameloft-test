@@ -1,0 +1,15 @@
+@import "../../assets/variable.scss";
+.container {
+  margin: 0 auto !important;
+  .button {
+    background-color: transparent;
+    border: 1px solid $secondaryColor;
+    outline: none;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10px;
+    padding: 8px 33px;
+    color: $secondaryColor;
+    border-radius: 3px;
+  }
+}

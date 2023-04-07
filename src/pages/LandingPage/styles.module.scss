@@ -1,0 +1,159 @@
+@import "../../assets/variable.scss";
+
+.root {
+  background-color: $secondaryColor;
+  .image {
+    opacity: 0.3;
+    display: flex;
+    padding: 170px 0px 115px 0px;
+    align-items: center;
+    justify-content: center;
+    img {
+      object-fit: contain;
+      width: 23%;
+      height: 23%;
+    }
+  }
+  .introduce {
+    color: #ffffff;
+    margin-left: 17px;
+
+    .ratingLabel {
+      font-size: 11px;
+      font-weight: 500;
+      line-height: 11px;
+      display: inline-block;
+      width: 83px;
+    }
+    .starRating {
+      padding-left: 10px;
+    }
+    .description {
+      max-width: 596px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 20px;
+      font-style: normal;
+      text-align: left;
+      margin-bottom: 50px;
+      margin-top: 36px;
+      line-height: 1.2em;
+      max-height: 3.6em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .download {
+    background-color: $primaryColor;
+    .container {
+      color: $secondaryColor;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 20px;
+      font-weight: bold;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      justify-content: space-between;
+      align-items: center;
+      label {
+        margin-left: 13px;
+      }
+    }
+    .buttons {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-user-drag: none;
+      -webkit-touch-callout: none;
+    }
+    button {
+      background-color: transparent;
+      box-shadow: none;
+      outline: none;
+      border: none;
+      padding: 0px;
+      width: 145px;
+      height: 40px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+      }
+    }
+    .btnMicroSoft {
+      background-color: black;
+      height: 40px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+  }
+
+  .registerForm {
+    background-color: #ebf6ff;
+    color: $secondaryColor;
+    .container {
+      display: flex;
+      padding: 300px 0px;
+      .flex1 {
+        flex: 1;
+      }
+    }
+
+    .formRegister {
+      display: flex;
+      justify-content: center;
+      .wrapper {
+        width: 251px;
+
+        .cb1 {
+          margin-top: 17px;
+        }
+      }
+      p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 12px;
+        font-style: normal;
+        text-align: left;
+        margin: 0;
+      }
+    }
+    .form {
+      margin-top: 27px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+  }
+  .postSection {
+    color: $secondaryColor;
+    background-color: #ffffff;
+  }
+  .subTitle {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: $mobilePoint) {
+  .root {
+    .download {
+      font-size: 25px;
+      justify-content: flex-start;
+      .buttons {
+        padding-top: 15px;
+        flex-direction: row-reverse;
+        flex-wrap: wrap-reverse;
+      }
+    }
+    .introduce {
+      .description {
+        margin-top: 17px;
+        margin-bottom: 39px;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+:root {
+  font-family: montserrat;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.heading1 {
+  font-family: "montserrat";
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 45px;
+  font-style: normal;
+  text-align: left;
+  margin: 0px;
+}
+
+.heading2 {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 25px;
+  font-style: normal;
+  text-align: left;
+  margin: 0px;
+}
+
+.heading3 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+  font-style: normal;
+  text-align: left;
+  margin: 0px;
+}

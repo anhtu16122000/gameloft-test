@@ -1,0 +1,23 @@
+@import "../../assets/variable.scss";
+
+.container {
+  border: 1px solid $secondaryColor;
+  border-radius: 3px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .select {
+    margin: 0px 6px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    flex: 1;
+    color: $secondaryColor;
+    font-size: 12px;
+  }
+  option {
+    width: 100%;
+  }
+}
