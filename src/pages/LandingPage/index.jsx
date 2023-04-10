@@ -415,9 +415,7 @@ const PostSection = ({ isMobile }) => {
                   className={styles.containerInput}
                   inputClassName={styles.input}
                   inputProps={{ placeholder: "Search" }}
-                  RightIcon={() => (
-                    <img src="../../../public/icons/magnify.svg" />
-                  )}
+                  RightIcon={() => <img src="/icons/magnify.svg" />}
                 />
               )}
             </div>
@@ -428,9 +426,7 @@ const PostSection = ({ isMobile }) => {
                 className={styles.containerInput}
                 inputClassName={styles.input}
                 inputProps={{ placeholder: "Search" }}
-                RightIcon={() => (
-                  <img src="../../../public/icons/magnify.svg" />
-                )}
+                RightIcon={() => <img src="/icons/magnify.svg" />}
               />
             </Container>
           )}
