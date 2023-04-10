@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "home": "https://anhtu16122000.githud.io/gameloft-test/",
+  "homepage": "https://anhtu16122000.github.io/gameloft-test/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
