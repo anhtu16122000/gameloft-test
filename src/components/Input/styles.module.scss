@@ -7,9 +7,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0px 8px;
 
   .input {
-    margin: 0px 8px;
     background-color: transparent;
     border: none;
     outline: none;
@@ -19,5 +19,13 @@
   }
   .input::placeholder {
     color: $secondaryColor;
+  }
+}
+
+@media (max-width: $mobilePoint) {
+  .container {
+    .input {
+      font-style: italic;
+    }
   }
 }

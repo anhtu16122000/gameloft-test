@@ -1,11 +1,12 @@
 @import "../../assets/variable.scss";
 
-$heightHeader: 76px;
 .root {
   position: fixed;
+  background-color: $primaryColor;
   top: 0px;
   left: 0px;
   right: 0px;
+  z-index: 99;
   .containerHead {
     display: flex;
     height: $heightHeader;
@@ -23,6 +24,8 @@ $heightHeader: 76px;
   margin-top: $heightHeader;
 }
 .floatIcon {
+  z-index: 99;
+
   position: fixed;
   bottom: 10px;
   right: 80px;
@@ -39,7 +42,14 @@ $heightHeader: 76px;
     border-radius: 50%;
     width: 33px;
     height: 33px;
-    box-shadow: 0px 0px 0px 1px #888484;
+    transition: outline 0.2s;
+    &:hover {
+      outline: 5px solid #ffffff83;
+    }
+    &:hover svg {
+      filter: invert(49%) sepia(19%) saturate(7379%) hue-rotate(190deg)
+        brightness(106%) contrast(97%);
+    }
     img {
       object-fit: contain;
     }
@@ -47,6 +57,6 @@ $heightHeader: 76px;
 }
 @media (max-width: $mobilePoint) {
   .floatIcon {
-    right: 30px;
+    right: 27px;
   }
 }

@@ -1,8 +1,18 @@
+import clsx from "clsx";
 import styles from "./styles.module.scss";
-const Button = ({ children }) => {
+
+const Button = ({ children, fullWidth = false, className }) => {
   return (
-    <div className={styles.container}>
-      <button className={styles.button}>{children}</button>
+    <div className={clsx(styles.container, fullWidth && styles.fullWidth)}>
+      <button
+        className={clsx(
+          styles.button,
+          fullWidth && styles.fullWidth,
+          className,
+        )}
+      >
+        {children}
+      </button>
     </div>
   );
 };

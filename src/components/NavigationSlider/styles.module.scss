@@ -1,0 +1,16 @@
+@import "../../assets/variable.scss";
+
+.root {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  .wrapperIndex {
+    display: flex;
+    height: 13.5px;
+  }
+  .currentSlider {
+    align-self: self-end;
+    font-weight: bold;
+  }
+}

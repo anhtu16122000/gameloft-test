@@ -1,11 +1,11 @@
 :root {
   font-family: montserrat;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
 }
 
 .heading1 {
@@ -34,4 +34,10 @@ body {
   font-style: normal;
   text-align: left;
   margin: 0px;
+}
+
+@media (max-width: 576px) {
+  .heading3 {
+    font-size: 25px;
+  }
 }

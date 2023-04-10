@@ -11,5 +11,14 @@
     padding: 8px 33px;
     color: $secondaryColor;
     border-radius: 3px;
+    cursor: pointer;
+    transform: all 0.2s;
+    &:hover {
+      background-color: $secondaryColor;
+      border-color: $secondaryColor !important;
+    }
   }
+}
+.fullWidth {
+  width: -webkit-fill-available;
 }

@@ -1,12 +1,21 @@
 import clsx from "clsx";
 import styles from "./styles.module.scss";
 
-const Options = ({ selectProps, selectClassName, options }) => {
+const Options = ({
+  className,
+  selectProps,
+  selectClassName,
+  LeftIcon,
+  options,
+}) => {
   return (
-    <div className={styles.container}>
+    <div className={clsx(styles.container, className)}>
+      {LeftIcon && <LeftIcon />}
       <select className={clsx(styles.select, selectClassName)} {...selectProps}>
         {options?.map(({ value = "", label = "" }) => (
-          <option value={value}>{label}</option>
+          <option key={value} value={value}>
+            {label}
+          </option>
         ))}
       </select>
     </div>
